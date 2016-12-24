@@ -1,4 +1,4 @@
-package artem.sborets.com.flowtifysamplework.view;
+package artem.sborets.com.flowtifysamplework.view.interaction;
 
 
 import java.util.List;
@@ -10,9 +10,5 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface FragmentInteractionInterface {
-    @GET("department/list/backend")
-    Call<List<Department>> getDepartments();
-
-    @POST("account/login")
-    Call<User> basicLogin();
+    void onLogin(String login, String password);
 }
