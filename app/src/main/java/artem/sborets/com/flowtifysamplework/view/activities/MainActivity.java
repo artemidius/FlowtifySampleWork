@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements FragmentInteracti
     @Override
     public void onLogout() {
         sharedPreferencesUtils.clearCredentials();
+        loginPrechecked = true;
         addFragment(loginFragment, false);
     }
 

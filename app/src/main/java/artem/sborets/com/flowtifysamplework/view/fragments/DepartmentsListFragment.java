@@ -77,7 +77,7 @@ public class DepartmentsListFragment extends Fragment {
                 return true;
         }
 
-        return super.onOptionsItemSelected(item); // important line
+        return super.onOptionsItemSelected(item);
     }
 
 
