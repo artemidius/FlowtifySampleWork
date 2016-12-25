@@ -11,5 +11,4 @@
 
 ## FUNCTIONALITY
 App has some functions beyond initial task.
-It checks network status, handels connection problems, allowes user to log out. This way it seems to be a way more complete and usable.
-
+It checks network status, handels connection problems, allows user to log out. This way it seems to be a way more complete and usable.
