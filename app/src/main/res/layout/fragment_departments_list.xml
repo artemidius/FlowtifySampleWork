@@ -1,13 +1,28 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="artem.sborets.com.flowtifysamplework.view.DepartmentsListFragment">
+    tools:context="artem.sborets.com.flowtifysamplework.view.fragments.DepartmentsListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ToolbarColorsWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:titleTextColor="#FFFFFFFF"
+        app:titleTextColor="#FFFFFFFF"/>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/departmentsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingTop="8dp"
+        android:scrollbars="vertical" />
 </FrameLayout>

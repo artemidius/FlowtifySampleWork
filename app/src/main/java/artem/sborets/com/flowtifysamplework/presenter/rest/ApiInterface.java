@@ -9,7 +9,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 
-public interface ApiInterface {
+interface ApiInterface {
     @GET("department/list/backend")
     Call<List<Department>> getDepartments();
 

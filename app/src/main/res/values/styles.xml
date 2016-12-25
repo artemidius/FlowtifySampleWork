@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ToolbarColorsWhite" parent="AppTheme">
+        <item name="android:textColorSecondary">#FFFFFFFF</item>
+    </style>
+
 </resources>

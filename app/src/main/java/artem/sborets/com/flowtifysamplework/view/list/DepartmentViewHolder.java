@@ -9,25 +9,23 @@ import artem.sborets.com.flowtifysamplework.model.Department;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
-
-public class DepartmentViewHolder extends RecyclerView.ViewHolder {
+ class DepartmentViewHolder extends RecyclerView.ViewHolder {
 
     @BindView(R.id.departmentName)
     TextView departmentName;
     @BindView(R.id.departmentAdress)
     TextView departmentAdress;
+    @BindView(R.id.departmentCity)
+    TextView departmentCity;
 
-
-    public DepartmentViewHolder(View v) {
+    DepartmentViewHolder(View v) {
         super(v);
         ButterKnife.bind(this, v);
     }
 
-    public void setData(Department department) {
+    void setData(Department department) {
         departmentName.setText(department.getName());
-        departmentAdress.setText(department.getAdress());
+        departmentAdress.setText(department.getAdressLine());
+        departmentCity.setText(department.getCityLine());
     }
-
-
 }

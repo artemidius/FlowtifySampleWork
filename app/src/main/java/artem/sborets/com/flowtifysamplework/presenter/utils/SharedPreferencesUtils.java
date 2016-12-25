@@ -11,9 +11,9 @@ import static artem.sborets.com.flowtifysamplework.presenter.utils.Properties.US
 
 public class SharedPreferencesUtils {
 
-    Context context;
-    SharedPreferences sharedpreferences;
-    SharedPreferences.Editor editor;
+    protected Context context;
+    private SharedPreferences sharedpreferences;
+    private SharedPreferences.Editor editor;
 
     public SharedPreferencesUtils(Context context) {
         this.context = context;
@@ -21,7 +21,7 @@ public class SharedPreferencesUtils {
         editor = sharedpreferences.edit();
     }
 
-    public void addToSharedPrefs(String key, String value) {
+    private void addToSharedPrefs(String key, String value) {
         editor.putString(key, value);
         editor.commit();
     }

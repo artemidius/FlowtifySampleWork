@@ -35,19 +35,11 @@ public class Department {
         return name;
     }
 
-    public String getStreet() {
-        return street;
+    public String getAdressLine() {
+        return street + " " + streetNumber;
     }
 
-    public String getStreetNumber() {
-        return streetNumber;
-    }
-
-    public int getZip() {
-        return zip;
-    }
-
-    public String getCity() {
-        return city;
+    public String getCityLine() {
+        return zip + " " + city;
     }
 }

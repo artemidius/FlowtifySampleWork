@@ -1,8 +1,17 @@
 package artem.sborets.com.flowtifysamplework.model;
 
-/**
- * Created by q on 23.12.16.
- */
+
+import com.google.gson.annotations.SerializedName;
 
 public class User {
+    @SerializedName("_id")
+    private String id;
+
+    public User(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
 }
