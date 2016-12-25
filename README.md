@@ -12,6 +12,3 @@
 ## FUNCTIONALITY
 App has some functions beyond initial task.
 It checks network status, handels connection problems, allowes user to log out. This way it seems to be a way more complete and usable.
-
-![alt text] (https://yadi.sk/i/fq8kcCOG34vRfR "1")
-
